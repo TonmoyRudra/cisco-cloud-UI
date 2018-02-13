@@ -1,0 +1,67 @@
+html,
+body{
+	margin:0;
+	padding:0;
+	background:#fff;
+	font-family: 'Open Sans', sans-serif;
+	overflow-x: hidden
+ }
+.icon {
+	color:white;
+	width: 32px;
+	/* height: 32px; */
+	max-width: 100%;
+    height: auto;
+	
+}
+
+.iconTab {
+	color:white;
+	width: 25px;
+	/* height: 32px; */
+	max-width: 100%;
+    height: auto;
+	
+}
+.icon-user{
+	position: absolute;
+    right: 243px;
+    width: 26px;
+    height: 26px;
+    top: 3px;
+}
+.header-left-icon{
+	
+	cursor: pointer;
+}
+
+.statusHeader{
+	border: none;
+    background: black;
+    color: white;
+    outline: 0px;
+}
+.left-tab{
+	padding: 0px;
+}
+.tabView-left {
+	padding-right: 0px;
+    background: #212b38;
+	height: 48px;
+	padding-top: 10px;
+}
+
+.tabView-left-icon{
+	
+	cursor: pointer;
+	margin-left: 6px;
+}
+
+.tabView-left-icon i{
+	color:white;
+	font-size: 18px;
+}
+
+
+
+

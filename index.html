@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Cisco Cloud</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <!-- CSS CSS CSS CSS -->
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/tabstyles.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/tabs.css" rel="stylesheet" type="text/css" media="all" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+    <!-- JS JS JS JS JS JS -->
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment.min.js"></script>
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+    <!-- <style>
+ 
+}
+</style> -->
+</head>
+
+<body class="">
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Header -->
+            <div class="col-md-12 header" style="padding: 0px;">
+                <div class="row" style="height:48px; background-color:#000000;padding-top: 5px;">
+                    <div class="col-md-6">
+                        <span class=" header-left-icon">
+                            <img src="images/icons/settings_512x512.png" class="icon " />
+                        </span>
+                        <span class=" header-left-icon">
+                            <img src="images/icons/left_64x64.png" class="icon " />
+                        </span>
+                        <span class=" header-left-icon">
+                            <img src="images/icons/right_64x64.png" class="icon" />
+                        </span>
+                        <span class=" header-left-icon">
+                            <img src="images/icons/help_64x64.png" class="icon" />
+                        </span>
+                    </div>
+                    <div class="col-md-6">
+                        <div style="float:right;">
+                            <span>
+                                <select class="statusHeader" id="status" name="status">
+                                    <option style="color:green;" value="1">Available</option>
+                                    <option style="color:red;"  value="2">Busy</option>
+                                    <option style="color:orange;"  value="3">Away</option>
+                                </select>
+                            </span>
+                            <span class=" header-left-icon">
+                                <img src="images/icons/green_halo_512x512.png" class="icon" />
+                                <img src="images/icons/user_64x64.png" class="icon icon-user" />
+                            </span>
+                            <span style="color:white;"> Mark Gonsalves(mgonsalves)</span>
+                            <span class=" header-left-icon">
+                                <img src="images/icons/logout_512x512.png" class="icon" />
+                            </span>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Main Panel -->
+            <div class="col-md-12 mainPanel" style="padding: 0px;">
+                <div class="row " style="background-color:#2C3A4B;">
+                    
+                    <!-- Main Left -->
+                    <div class="col-md-2 mainPanelLeft" style="padding-right: 0px;">
+                        <div class="mainPanelLeft" style=" background-color:#445366;">
+                            <div class="col-md-12 left-tab" style="padding: 0px;">
+                                <div style="height:48px; background-color:#2C3A4B;  padding-top: 5px;">
+                                    <div class="">
+                                        <span class="tabView-left-icon channel">
+                                            <img src="images/icons/channel_group_512x512.png" class="iconTab" />
+                                            <!-- <span style="color:white;" class="channel-text">Channels</span> -->
+                                        </span>
+                                        <span class="tabView-left-icon user">
+                                            <img src="images/icons/user_512x512.png" class="iconTab" />
+                                            <!-- <span style="color:white;" class="user-text">Users</span> -->
+                                        </span>
+                                        <span class="tabView-left-icon alertRab">
+                                            <img src="images/icons/alert_512x512.png" class="iconTab" />
+                                            <!-- <span style="color:white;" class="alert-text">Alert</span> -->
+                                        </span>
+                                        <span class="tabView-left-icon camera">
+                                            <img src="images/icons/camera_512x512.png" class="iconTab" />
+                                            <!-- <span style="color:white;" class="camera-text">Camera</span> -->
+                                        </span>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                
+                                  
+                    
+                        </div>
+                    </div>
+
+                    <!-- Main Center -->
+                    <div class="col-md-8 mainPanelCenter">
+                        <div class="mainPanelCenter" style=" background-color:#677587;">
+                            <div class="col-md-12 left-tab" style="padding: 0px;">
+                                <div style="height:48px; background-color:#2C3A4B;  padding-top: 5px;">
+                                </div>
+                            </div>
+                        </div>
+                    
+                    </div>
+                    
+                    <!-- Main Right -->
+                    <div class="col-md-2 mainPanelRight" style="padding-left: 0px;">
+                        <div class="mainPanelRight" style=" background-color:#445366;">
+                            <div class="col-md-12 left-tab" style="padding: 0px;">
+                                <div style="height:48px; background-color:#2C3A4B;  padding-top: 5px;">
+                                </div>
+                            </div>
+                        </div>
+                    
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Footer -->
+            <div class="col-md-12 footer" style="padding: 0px;position:absolute; bottom:0;">
+                <div style="height:32px; background-color:#000000;"></div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+<script>
+    $(document).ready(function () {
+
+        var headerHeight = $(".header").height();
+        var tabviewHeight = $(".tabView").height();
+        var footerHeight = $(".footer").height();
+        $(".mainPanel,.mainPanelLeft,.mainPanelCenter,.mainPanelRight").css("height", window.innerHeight - (headerHeight  + footerHeight) + "px")
+        $(".statusHeader").css("color","green");
+        $("#status").change(function() {
+    
+            var el = $(this) ;
+            
+            if(el.val() === "1" ) {
+                $(".statusHeader").css("color","green");
+            }
+            else if(el.val() === "2" ) {
+                $(".statusHeader").css("color","red") ; 
+            }
+            else if(el.val() === "3" ) {
+                $(".statusHeader").css("color","orange") ; 
+            }
+        });
+    
+    })
+</script>
+
+
+
+
+</html>
