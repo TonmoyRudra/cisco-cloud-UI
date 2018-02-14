@@ -16,6 +16,10 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
         crossorigin="anonymous">
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link href="css/main.css" rel="stylesheet" type="text/css" />
+    <link href="css/tab.css" rel="stylesheet" type="text/css" />
+    <!-- <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> -->
+
 
     <!-- JS JS JS JS JS JS -->
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
@@ -24,6 +28,7 @@
     <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
         crossorigin="anonymous"></script>
+    <script src="js/tab.js" type="text/javascript"></script>
     <!-- <style>
  
 }
@@ -55,8 +60,8 @@
                             <span>
                                 <select class="statusHeader" id="status" name="status">
                                     <option style="color:green;" value="1">Available</option>
-                                    <option style="color:red;"  value="2">Busy</option>
-                                    <option style="color:orange;"  value="3">Away</option>
+                                    <option style="color:red;" value="2">Busy</option>
+                                    <option style="color:orange;" value="3">Away</option>
                                 </select>
                             </span>
                             <span class=" header-left-icon">
@@ -77,37 +82,104 @@
             <!-- Main Panel -->
             <div class="col-md-12 mainPanel" style="padding: 0px;">
                 <div class="row " style="background-color:#2C3A4B;">
-                    
+
                     <!-- Main Left -->
                     <div class="col-md-2 mainPanelLeft" style="padding-right: 0px;">
                         <div class="mainPanelLeft" style=" background-color:#445366;">
-                            <div class="col-md-12 left-tab" style="padding: 0px;">
-                                <div style="height:48px; background-color:#2C3A4B;  padding-top: 5px;">
-                                    <div class="">
-                                        <span class="tabView-left-icon channel">
-                                            <img src="images/icons/channel_group_512x512.png" class="iconTab" />
-                                            <!-- <span style="color:white;" class="channel-text">Channels</span> -->
-                                        </span>
-                                        <span class="tabView-left-icon user">
-                                            <img src="images/icons/user_512x512.png" class="iconTab" />
-                                            <!-- <span style="color:white;" class="user-text">Users</span> -->
-                                        </span>
-                                        <span class="tabView-left-icon alertRab">
-                                            <img src="images/icons/alert_512x512.png" class="iconTab" />
-                                            <!-- <span style="color:white;" class="alert-text">Alert</span> -->
-                                        </span>
-                                        <span class="tabView-left-icon camera">
-                                            <img src="images/icons/camera_512x512.png" class="iconTab" />
-                                            <!-- <span style="color:white;" class="camera-text">Camera</span> -->
-                                        </span>
+
+                            <div class="tabs standard row">
+                                <div class="col-md-12 left-tab" style="padding: 0px;">
+                                    <div style="height:48px; background-color:#2C3A4B;  padding-top: 1px;">
+                                        <ul class="tab-links" >
+                                            <li class="active"  style=" line-height: 0em;">
+                                                <a href="#channel">
+                                                    <span class="tabView-left-icon channel">
+                                                        <img src="images/icons/channel_group_512x512.png" class="iconTab" />
+                                                        <span  class="tabText" id="channel-lefttab">Channels</span>
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li class="" style=" line-height: 0em;">
+                                                <a href="#user">
+                                                    <span class="tabView-left-icon user">
+                                                        <img src="images/icons/user_512x512.png" class="iconTab" />
+                                                        <span  class="tabText" style="display:none;" id="user-lefttab">Users</span>
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li class="" style=" line-height: 0em;">
+                                                <a href="#alert">
+                                                    <span class="tabView-left-icon alertRab">
+                                                        <img src="images/icons/alert_512x512.png" class="iconTab" />
+                                                        <span  class="tabText" style="display: none;" id="alert-lefttab">Alert</span>
+
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li class="" style=" line-height: 0em;">
+                                                <a href="#camera">
+                                                    <span class="tabView-left-icon camera">
+                                                        <img src="images/icons/camera_512x512.png" class="iconTab" />
+                                                        <span  class="tabText" style="display: none;" id="camera-lefttab">Camera</span>
+
+                                                    </span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+
+                                <div class="col-md-12 tab-content">
+                                    <div id="channel" class="tab " style="display: block;">
+                                        <div class="row">
+                                            <div class="col-md-8">
+                                                <div><input type="text" name="" value=""></div>
+                                            </div>
+                                            <div class="col-md-2">
+                                                sdf
+                                                    <span class="tabView-left-icon channel">
+                                                        <img src="images/icons/search_512x512.png" class="iconTab" />
+                                                    </span>
+                                            </div>
+                                            <div class="col-md-2">
+                                                sdf
+                                                    <span class="tabView-left-icon channel">
+                                                            <img src="images/icons/search_512x512.png" class="iconTab" />
+                                                        </span>
+                                            </div>
+                                        </div>
+
+
+
                                     </div>
 
+                                    <div id="user" class="tab" style="display: none;">
+                                        <p>Tab #2 content goes here!</p>
+                                        <p>Donec pulvinar neque sed semper lacinia. Curabitur lacinia ullamcorper nibh; quis
+                                            imperdiet velit eleifend ac. Donec blandit mauris eget aliquet lacinia! Donec
+                                            pulvinar massa interdum risus ornare mollis. In hac habitasse platea dictumst.
+                                            Ut euismod tempus hendrerit. Morbi ut adipiscing nisi. Etiam rutrum sodales gravida!
+                                            Aliquam tellus orci, iaculis vel.</p>
+                                    </div>
+
+                                    <div id="alert" class="tab" style="display: none;">
+                                        <p>Tab #3 content goes here!</p>
+                                        <p>Donec pulvinar neque sed semper lacinia. Curabitur lacinia ullamcorper nibh; quis
+                                            imperdiet velit eleifend ac. Donec blandit mauris eget aliquet lacinia! Donec
+                                            pulvinar massa interdum ri.</p>
+                                    </div>
+                                    <div id="camera" class="tab" style="display: none;">
+                                        <p>Tab #4 content goes here!</p>
+                                        <p>Donec pulvinar neque sed semper lacinia. Curabitur lacinia ullamcorper nibh; quis
+                                            imperdiet velit eleifend ac. Donec blandit mauris eget aliquet lacinia! Donec
+                                            pulvinar massa interdum ri.</p>
+                                    </div>
                                 </div>
                             </div>
 
-                
-                                  
-                    
+
+
                         </div>
                     </div>
 
@@ -119,9 +191,9 @@
                                 </div>
                             </div>
                         </div>
-                    
+
                     </div>
-                    
+
                     <!-- Main Right -->
                     <div class="col-md-2 mainPanelRight" style="padding-left: 0px;">
                         <div class="mainPanelRight" style=" background-color:#445366;">
@@ -130,7 +202,7 @@
                                 </div>
                             </div>
                         </div>
-                    
+
                     </div>
 
                 </div>
@@ -151,23 +223,23 @@
         var headerHeight = $(".header").height();
         var tabviewHeight = $(".tabView").height();
         var footerHeight = $(".footer").height();
-        $(".mainPanel,.mainPanelLeft,.mainPanelCenter,.mainPanelRight").css("height", window.innerHeight - (headerHeight  + footerHeight) + "px")
-        $(".statusHeader").css("color","green");
-        $("#status").change(function() {
-    
-            var el = $(this) ;
-            
-            if(el.val() === "1" ) {
-                $(".statusHeader").css("color","green");
+        $(".mainPanel,.mainPanelLeft,.mainPanelCenter,.mainPanelRight").css("height", window.innerHeight - (headerHeight + footerHeight) + "px")
+        $(".statusHeader").css("color", "green");
+        $("#status").change(function () {
+
+            var el = $(this);
+
+            if (el.val() === "1") {
+                $(".statusHeader").css("color", "green");
             }
-            else if(el.val() === "2" ) {
-                $(".statusHeader").css("color","red") ; 
+            else if (el.val() === "2") {
+                $(".statusHeader").css("color", "red");
             }
-            else if(el.val() === "3" ) {
-                $(".statusHeader").css("color","orange") ; 
+            else if (el.val() === "3") {
+                $(".statusHeader").css("color", "orange");
             }
         });
-    
+
     })
 </script>
 

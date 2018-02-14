@@ -25,7 +25,7 @@ body{
 }
 .icon-user{
 	position: absolute;
-    right: 243px;
+    right: 244px;
     width: 26px;
     height: 26px;
     top: 3px;
@@ -62,6 +62,13 @@ body{
 	font-size: 18px;
 }
 
+.dontShowTabText{
+	display: none;
+}
 
+.tabText{
+	font-size: 10px;
+	color: white; 
+}
 
 
