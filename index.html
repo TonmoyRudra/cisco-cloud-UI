@@ -29,10 +29,6 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
         crossorigin="anonymous"></script>
     <script src="js/main.js" type="text/javascript"></script>
-    <!-- <style>
- 
-
-    </style> -->
 </head>
 
 <body class="">
@@ -301,7 +297,6 @@
                                                             </div>
                                                         </div>
                                                     </div>
-
                                                 </div>
                                             </div>
 
@@ -333,72 +328,13 @@
 
                                             <div class="col-md-12 mainTab" style="padding-left:5px;">
                                                 <div class="row mainTabRow" style="padding-left: 15px;padding-top: 5px;">
+                                                    
+                                                    <input id="toggleServerDev" class="toggleButton" type="checkbox">
+                                                    <div class="toggleGroupColor">
+                                                        <label for="toggleServerDev" class="toggleButtonText tab-list-text">QA Team</label>
+                                                    </div>
 
-                                                    <input id="toggleDevelopment" class="toggleButton" type="checkbox">
-                                                    <div class="toggleGroupColor">
-                                                        <label for="toggleDevelopment" class="toggleButtonText tab-list-text">Development Team</label>
-                                                    </div>
-                                                    <div id="expandDevelopment">
-                                                        <div class="row" style="padding-top: 7px; margin-right:0px; ">
-                                                            <div class="col-md-2 col-sm-2">
-                                                                <span class="tabView-left-icon channel">
-                                                                    <img src="images/icons/channel_512x512.png" style="width:25px;" />
-                                                                </span>
-                                                            </div>
-                                                            <div class="col-md-10 col-sm-10 tab-list-text ">
-                                                                <span class="">Server</span>
-                                                            </div>
-                                                        </div>
-                                                        <div class="row" style="padding-top: 7px; margin-right:0px;">
-                                                            <div class="col-md-2">
-                                                                <span class="tabView-left-icon channel">
-                                                                    <img src="images/icons/channel_512x512.png" style="width:25px;" />
-                                                                </span>
-                                                            </div>
-                                                            <div class="col-md-10  tab-list-text">
-                                                                <span class="">Mobile</span>
-                                                            </div>
-                                                        </div>
-                                                        <div class="row" style="padding-top: 7px; margin-right:0px;">
-                                                            <div class="col-md-2">
-                                                                <span class="tabView-left-icon channel">
-                                                                    <img src="images/icons/channel_512x512.png" style="width:25px;" />
-                                                                </span>
-                                                            </div>
-                                                            <div class="col-md-10  tab-list-text">
-                                                                <span class="">Desktop</span>
-                                                            </div>
-                                                        </div>
-                                                        <div class="row" style="padding-top: 7px; margin-right:0px;">
-                                                            <div class="col-md-2">
-                                                                <span class="tabView-left-icon channel">
-                                                                    <img src="images/icons/channel_512x512.png" style="width:25px;" />
-                                                                </span>
-                                                            </div>
-                                                            <div class="col-md-10  tab-list-text">
-                                                                <span class="">UMS</span>
-                                                            </div>
-                                                        </div>
-                                                        <div class="row" style="padding-top: 7px; margin-right:0px;">
-                                                            <div class="col-md-2">
-                                                                <span class="tabView-left-icon channel">
-                                                                    <img src="images/icons/meeting_512x512.png" style="width:25px;" />
-                                                                </span>
-                                                            </div>
-                                                            <div class="col-md-10  tab-list-text">
-                                                                <span class="">Daily Scrum Mgt</span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-12 mainTab" style="padding-left:5px;">
-                                                <div class="row mainTabRow" style="padding-left: 15px;padding-top: 5px;">
-                                                    <input id="toggleQATeam" class="toggleButton" type="checkbox">
-                                                    <div class="toggleGroupColor">
-                                                        <label for="toggleQATeam" class="toggleButtonText tab-list-text">QA Team</label>
-                                                    </div>
-                                                    <div id="expandQATeam">
+                                                    <div id="expandServerDev" class="expand">
                                                         <div class="row" style="padding-top: 7px; margin-right:0px;">
                                                             <div class="col-md-2">
                                                                 <span class="tabView-left-icon channel">
@@ -423,50 +359,7 @@
 
                                                 </div>
                                             </div>
-                                            <div class="col-md-12 mainTab" style="padding-left:5px;">
-                                                <div class="row mainTabRow" style="padding-left: 15px;padding-top: 5px;">
-
-                                                    <input id="toggleProudctMgt" class="toggleButton" type="checkbox">
-                                                    <div class="toggleGroupColor">
-                                                        <label for="toggleProudctMgt" class="toggleButtonText tab-list-text">Product Mgt</label>
-                                                    </div>
-                                                    <div id="expandProudctMgt">
-                                                        <div class="row" style="padding-top: 7px; margin-right:0px;">
-                                                            <div class="col-md-2">
-                                                                <span class="tabView-left-icon channel">
-                                                                    <img src="images/icons/channel_512x512.png" style="width:25px;" />
-                                                                </span>
-                                                            </div>
-                                                            <div class="col-md-10  tab-list-text">
-                                                                <span class="">WEB</span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
-                                                </div>
-                                            </div>
-                                            <div class="col-md-12 mainTab" style="padding-left:5px;">
-                                                <div class="row mainTabRow" style="padding-left: 15px;padding-top: 5px;">
-
-                                                    <input id="toggleSupport" class="toggleButton" type="checkbox">
-                                                    <div class="toggleGroupColor">
-                                                        <label for="toggleSupport" class="toggleButtonText tab-list-text">Support</label>
-                                                    </div>
-                                                    <div id="expandSupport">
-                                                        <div class="row" style="padding-top: 7px; margin-right:0px;">
-                                                            <div class="col-md-2">
-                                                                <span class="tabView-left-icon channel">
-                                                                    <img src="images/icons/channel_512x512.png" style="width:25px;" />
-                                                                </span>
-                                                            </div>
-                                                            <div class="col-md-10  tab-list-text">
-                                                                <span class="">24x7</span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
-                                                </div>
-                                            </div>
+                                            
 
                                         </div>
 

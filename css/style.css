@@ -89,12 +89,11 @@ li{
 	margin-right: 0px;
 }
 
-
-/*  */
 .toggleButton {
 	display: none;
 	visibility: hidden;
 }
+/*  */
 #expandDevelopment {
 	height: 0px;
 	overflow:hidden ;
@@ -107,11 +106,8 @@ li{
 	content: "\f01b";
 }
 /*  */
+
 /* Toggol tab Menu*/
-.toggleQATeam {
-	display: none;
-	visibility: hidden;
-}
 #expandQATeam {
 	height: 0px;
 	overflow:hidden ;
@@ -124,10 +120,6 @@ li{
 	content: "\f01b";
 }
 /* */
-.toggleProudctMgt {
-	display: none;
-	visibility: hidden;
-}
 #expandProudctMgt  {
 	height: 0px;
 	overflow:hidden ;
@@ -140,10 +132,6 @@ li{
 	content: "\f01b";
 }
 /* */
-.toggleSupport {
-	display: none;
-	visibility: hidden;
-}
 #expandSupport{
 	height: 0px;
 	overflow:hidden ;
@@ -157,6 +145,19 @@ li{
 }
 /* */
 
+/* */
+#expandServerDev{
+	height: 0px;
+	overflow:hidden ;
+	transition: height 0.3s;
+}  
+#toggleServerDev:checked ~ #expandServerDev {
+	height: auto;
+}
+#toggleServerDev:checked ~ div label::before {
+	content: "\f01b";
+}
+/* */
 
 
 label {
