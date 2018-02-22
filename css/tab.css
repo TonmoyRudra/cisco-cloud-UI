@@ -21,54 +21,116 @@ h2 {
 	display:inline-block;
 }
 
-	/*----- Tab Links -----*/
-	/* Clearfix */
-	.tab-links:after {
-		display:block;
-		clear:both;
-		content:'';
-	}
+/*----- Tab Links -----*/
+/* Clearfix */
+.tab-links:after {
+	display:block;
+	clear:both;
+	content:'';
+}
 
-	.tab-links li {
-        margin: 0px 0px;
-		float:left;
-		list-style:none;
-	}
+.tab-links li {
+    margin: 0px 0px;
+	float:left;
+	list-style:none;
+}
 
-	.tab-links a {
-		padding: 11px 4px;
-		display: inline-block;
-		/* border-radius: 3px 3px 0px 0px; */
-		background: #2c3a4b;
-		/* font-size: 16px; */
-		/* font-weight: 600; */
-		color: #4c4c4c;
-		transition: all linear 0.15s
-	}
+.tab-links a {
+	padding: 11px 4px;
+	/* width: 100%; */
+	display: inline-block;
+	/* border-radius: 3px 3px 0px 0px; */
+	background: #2c3a4b;
+	/* font-size: 16px; */
+	/* font-weight: 600; */
+	color: #4c4c4c;
+	transition: all linear 0.15s
+}
 
-		.tab-links a:hover {
-			background:#445366;
-			text-decoration:none;
-		}
+.tab-links a:hover {
+	background:#445366;
+	text-decoration:none;
+}
 
-	li.active a, li.active a:hover {
-		background: #445366;
-		color: #4c4c4c;;
-	}
+li.active a, li.active a:hover {
+	background: #445366;
+	color: #4c4c4c;;
+}
 
-	/*----- Content of Tabs -----*/
-	.tab-content {
-		padding:15px;
-		border-radius:3px;
-		box-shadow:-1px 1px 1px rgba(0,0,0,0.15);
-		background: #445366;
-    	color: white;
-	}
+/*----- Content of Tabs -----*/
+.tab-content {
+	padding:15px;
+	border-radius:3px;
+	/* box-shadow:-1px 1px 1px rgba(0,0,0,0.15); */
+	background: #445366;
+	color: white;
+}
 
-		.tab {
-			display:none;
-		}
+.tab {
+	display:none;
+}
 
-		.tab.active {
-			display:block;
-		}
+.tab.active {
+	display:block;
+}
+
+
+
+.tabs {
+	width:100%;
+	display:inline-block;
+}
+
+/*----- Main Center Tab Links -----*/
+/* Clearfix */
+.tab-links:after {
+	display:block;
+	clear:both;
+	content:'';
+}
+.mainPanelCenter .tab-links {
+	float: right;
+}
+.mainPanelCenter .tab-links li {
+    margin: 0px 0px;
+	float:left;
+	list-style:none;
+}
+
+.mainPanelCenter .tab-links a {
+	padding: 11px 4px;
+	display: inline-block;
+	/* border-radius: 3px 3px 0px 0px; */
+	background: #2c3a4b;
+	/* font-size: 16px; */
+	/* font-weight: 600; */
+	color: #4c4c4c;
+	transition: all linear 0.15s
+}
+
+.mainPanelCenter .tab-links a:hover {
+	background:#677587;
+	text-decoration:none;
+}
+
+.mainPanelCenter li.active a, li.active a:hover {
+	background: #677587;
+	color: #4c4c4c;;
+}
+
+/*----- Content of Tabs -----*/
+.mainPanelCenter .tab-content {
+	padding: 8px;
+	border-radius:3px;
+	/* box-shadow:-1px 1px 1px rgba(0,0,0,0.15); */
+	background: #677587;
+	color: white;
+}
+
+.mainPanelCenter .tab {
+	display:none;
+}
+
+.mainPanelCenter .tab.active {
+	display:block;
+}

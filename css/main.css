@@ -116,12 +116,12 @@
   }
   
   /* line 21, ../scss/2-framework/_typography.scss */
-  ul li, ol li {
+  /* ul li, ol li {
     margin: 10px 0px 10px 40px;
     font-size: 0.933em;
     line-height: 1.650em;
   }
-  
+   */
   /* line 23, ../scss/2-framework/_typography.scss */
   ul + p, ol + p,
   p + h1, p + h2, p + h3, p + h4, p + h5 {
